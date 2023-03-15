@@ -5,12 +5,7 @@ import PrimaryButton from "../../../Components/Button/PrimaryButton";
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Click outside to close.
-
-  // let menuRef = useClickOutside(() => {
-  //   setIsDropdownOpen(false);
-  // });
-
+  // Click outside of the nav button to close it.
   let menuRef = useRef();
 
   useEffect(() => {
@@ -45,11 +40,11 @@ const Navbar = () => {
               <div className="relative inline-block ">
                 <button
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="relative z-10 block p-2 text-gray-700 bg-white border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40  focus:ring-blue-300  focus:ring  focus:outline-none"
+                  className="relative z-10 block p-2 text-gray-700 bg-white border border-transparent rounded-md focus:border-emerald-500 focus:ring-opacity-40  focus:ring-lime-500  focus:ring  focus:outline-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5"
+                    className="w-5 h-5 text-emerald-500"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -61,10 +56,10 @@ const Navbar = () => {
                   <div className="absolute right-0 z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl ">
                     <Link
                       to="/dashboard"
-                      className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform  hover:bg-gray-100 "
+                      className="flex items-center px-3 py-3 text-sm text-gray-600 font-semibold capitalize transition-colors duration-200 transform  hover:text-emerald-500 "
                     >
                       <svg
-                        className="w-5 h-5 mx-1"
+                        className="w-5 h-5 mx-1 text-emerald-500"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -88,10 +83,10 @@ const Navbar = () => {
                         setIsDropdownOpen(false);
                         // logout();
                       }}
-                      className="flex items-center cursor-pointer p-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform  hover:bg-gray-100 "
+                      className="flex items-center cursor-pointer p-3 text-sm text-gray-600 font-semibold capitalize transition-colors duration-200 transform  hover:text-emerald-500 "
                     >
                       <svg
-                        className="w-5 h-5 mx-1"
+                        className="w-5 h-5 mx-1 text-emerald-500"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
