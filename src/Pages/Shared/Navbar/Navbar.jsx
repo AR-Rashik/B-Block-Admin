@@ -23,7 +23,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className="text-gray-900 body-font shadow-sm">
+    <header className="text-gray-900 body-font shadow-sm sticky top-0 left-0 right-0 z-50 bg-slate-50">
       <div className=" mx-auto flex flex-wrap py-5 px-20 flex-col md:flex-row items-center">
         <Link
           to="/"
@@ -40,7 +40,7 @@ const Navbar = () => {
               <div className="relative inline-block ">
                 <button
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="relative z-10 block p-2 text-gray-700 bg-white border border-transparent rounded-md focus:border-emerald-500 focus:ring-opacity-40  focus:ring-lime-500  focus:ring  focus:outline-none"
+                  className="relative z-10 block p-2 text-gray-700 bg-white border border-transparent rounded-md focus:border-emerald-500 focus:ring-opacity-40 focus:ring-lime-500 focus:ring  focus:outline-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </button>
 
                 {isDropdownOpen && (
-                  <div className="absolute right-0 z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl ">
+                  <div className="absolute right-0 z-50 w-48 py-2 mt-2 bg-white rounded-md shadow-xl ">
                     <Link
                       to="/dashboard"
                       className="flex items-center px-3 py-3 text-sm text-gray-600 font-semibold capitalize transition-colors duration-200 transform  hover:text-emerald-500 "
