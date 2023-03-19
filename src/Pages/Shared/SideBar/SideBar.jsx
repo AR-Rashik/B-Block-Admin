@@ -32,7 +32,7 @@ const SideBar = () => {
     <>
       {/* Sidebar starts */}
       {/* Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] */}
-      <div className="w-64 md:sticky top-20 left-0 sm:relative bg-slate-100 shadow md:h-full flex-col justify-between hidden sm:flex">
+      <div className="w-64 h-screen md:sticky top-20 left-0 sm:relative bg-slate-100 shadow md:h-full flex-col justify-between hidden sm:flex">
         <div className="px-8">
           <ul className="mt-12">
             {/* Dashboard */}
