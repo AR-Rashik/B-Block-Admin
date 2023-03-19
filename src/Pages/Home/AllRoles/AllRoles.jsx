@@ -2,6 +2,7 @@ import React from "react";
 import { FcConferenceCall } from "react-icons/fc";
 import PrimaryButton from "../../../Components/Button/PrimaryButton";
 import ClientsTable from "../AllClients/ClientsTable";
+import RolesTable from "./RolesTable";
 
 const AllRoles = () => {
   return (
@@ -36,7 +37,7 @@ const AllRoles = () => {
             </thead>
             {/* Table Body */}
             <tbody className="w-full">
-              <ClientsTable></ClientsTable>
+              <RolesTable></RolesTable>
             </tbody>
           </table>
         </div>
