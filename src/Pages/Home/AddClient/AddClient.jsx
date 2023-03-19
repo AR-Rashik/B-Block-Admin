@@ -1,4 +1,5 @@
 import React from "react";
+import { FcAddDatabase } from "react-icons/fc";
 import PrimaryButton from "../../../Components/Button/PrimaryButton";
 
 const AddClient = () => {
@@ -14,8 +15,9 @@ const AddClient = () => {
                 class="w-full h-full"
               /> */}
               <div class="absolute w-full flex flex-col px-6 items-center justify-center inset-0 m-0">
-                <p class="w-full text-2xl font-semibold leading-4 text-gray-800">
-                  Add new client
+                <p class="w-full text-2xl font-semibold leading-4 text-gray-800 flex items-center">
+                  <FcAddDatabase></FcAddDatabase>{" "}
+                  <span className="ml-4">Add New Role</span>
                 </p>
                 {/* <p class="w-full text-xs mt-1 leading-none text-white">
                   description of step 1
