@@ -1,4 +1,5 @@
 import React from "react";
+import { FcAddDatabase, FcPortraitMode } from "react-icons/fc";
 import PrimaryButton from "../../../Components/Button/PrimaryButton";
 
 const EditRole = () => {
@@ -15,8 +16,8 @@ const EditRole = () => {
               /> */}
               <div class="absolute w-full flex flex-col px-6 items-center justify-center inset-0 m-0">
                 <p class="w-full text-2xl font-semibold leading-4 text-gray-800 flex items-center">
-                  <FcAddDatabase></FcAddDatabase>{" "}
-                  <span className="ml-4">Add New Role</span>
+                  <FcPortraitMode></FcPortraitMode>{" "}
+                  <span className="ml-4">Edit Role</span>
                 </p>
                 {/* <p class="w-full text-xs mt-1 leading-none text-white">
                   description of step 1
@@ -50,6 +51,7 @@ const EditRole = () => {
                       class="w-full p-3 mt-3 bg-gray-100 border rounded border-gray-200 focus:outline-none focus:border-emerald-500 text-sm font-medium leading-none text-gray-800"
                       aria-labelledby="roleName"
                       placeholder="Admin / Moderator / ..."
+                      value="Super Admin"
                     />
                   </div>
                   {/* <div class="md:w-64 md:ml-12 md:mt-0 mt-4">

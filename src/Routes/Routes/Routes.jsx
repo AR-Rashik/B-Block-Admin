@@ -4,6 +4,7 @@ import AddClient from "../../Pages/Home/AddClient/AddClient";
 import AddRole from "../../Pages/Home/AddRole/AddRole";
 import AllClients from "../../Pages/Home/AllClients/AllClients";
 import AllRoles from "../../Pages/Home/AllRoles/AllRoles";
+import EditRole from "../../Pages/Home/AllRoles/EditRole";
 import BlockList from "../../Pages/Home/BlockList/BlockList";
 import ChangePassword from "../../Pages/Home/ChangePassword/ChangePassword";
 import Home from "../../Pages/Home/Home/Home";
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/role/allroles",
         element: <AllRoles></AllRoles>,
+      },
+      {
+        path: "/role/editrole",
+        element: <EditRole></EditRole>,
       },
       {
         path: "/settings/changepassword",

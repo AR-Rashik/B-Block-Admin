@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const RolesTable = () => {
   const [show, setShow] = useState(null);
@@ -138,10 +139,13 @@ const RolesTable = () => {
           )}
           {show == 0 && (
             <div className="dropdown-content bg-white shadow w-24 absolute z-30 right-0 mr-6 rounded-md">
-              <div className="text-xs font-medium w-full text-green-500 hover:bg-gradient-to-r hover:from-lime-500  hover:to-emerald-500 py-4 px-4 cursor-pointer hover:text-white flex items-center justify-around rounded-md">
+              <Link
+                to={"/role/editrole"}
+                className="text-xs font-medium w-full text-green-500 hover:bg-gradient-to-r hover:from-lime-500  hover:to-emerald-500 py-4 px-4 cursor-pointer hover:text-white flex items-center justify-around rounded-md"
+              >
                 <FaEdit></FaEdit>
                 <p>Edit</p>
-              </div>
+              </Link>
               <div className="text-xs font-medium w-full text-red-500 hover:bg-gradient-to-r hover:from-lime-500  hover:to-emerald-500 py-4 px-4 cursor-pointer hover:text-white flex items-center justify-around rounded-md">
                 <FaTrash></FaTrash>
                 <p>Delete</p>
