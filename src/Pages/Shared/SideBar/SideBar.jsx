@@ -214,31 +214,23 @@ const SideBar = () => {
               )}
             </li>
           </ul>
-          <div className="flex justify-center mt-48 mb-4 w-full">
-            <div className="relative ">
-              <div className="text-emerald-500 absolute ml-4 inset-0 m-auto w-4 h-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-search"
-                  width={16}
-                  height={16}
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <circle cx={10} cy={10} r={7} />
-                  <line x1={21} y1={21} x2={15} y2={15} />
-                </svg>
-              </div>
-              <input
-                className="focus:outline-emerald-500 rounded w-full text-sm text-gray-600 bg-gray-200 pl-10 py-2"
-                type="text"
-                placeholder="Search"
+          {/* Profile  */}
+          <div className="flex items-center mt-48 mb-10 px-8">
+            <div className="w-10 h-10 bg-cover rounded-md mr-3">
+              <img
+                src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_3_2.png"
+                alt="profile-avatar"
+                className="rounded-full h-full w-full overflow-hidden shadow"
               />
+            </div>
+            <div>
+              <p className="text-gray-800 text-sm font-medium">John Doe</p>
+              <Link
+                to={"/my-profile"}
+                className="text-gray-600 hover:text-emerald-500 text-xs cursor-pointer"
+              >
+                View Profile
+              </Link>
             </div>
           </div>
         </div>

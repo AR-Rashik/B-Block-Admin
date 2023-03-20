@@ -30,7 +30,7 @@ const AllClients = () => {
                 <th className="font-medium text-left pl-12">Progress</th>
                 <th className="font-medium text-left pl-12">ID</th>
                 <th className="font-medium text-left pl-20">Email</th>
-                <th className="font-medium text-left pl-20">Deadline</th>
+                <th className="font-medium text-left pl-20">Action</th>
                 {/* <th className="font-medium text-left pl-16">Members</th> */}
               </tr>
             </thead>

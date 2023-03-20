@@ -29,6 +29,12 @@ const Navbar = () => {
           to="/"
           className="flex title-font font-medium items-center text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-500 mb-4 md:mb-0"
         >
+          <img
+            className="w-10 h-full"
+            src="/public/b-block-icon-big.ico"
+            alt="icon"
+            srcset=""
+          />
           <span className="ml-3 text-2xl font-bold ">B-Block Digital</span>
         </Link>
         <nav

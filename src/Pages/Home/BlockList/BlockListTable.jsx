@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const ClientsTable = () => {
+const BlockListTable = () => {
   const [show, setShow] = useState(null);
 
   return (
@@ -24,14 +25,14 @@ const ClientsTable = () => {
             </div>
           </div>
         </td>
-        <td className="pl-12">
+        {/* <td className="pl-12">
           <p className="text-sm font-medium leading-none text-gray-800">72%</p>
           <div className="w-24 h-3 bg-gray-100 rounded-full mt-2">
             <div className="w-20 h-3 bg-green-progress rounded-full" />
           </div>
-        </td>
+        </td> */}
         <td className="pl-12">
-          <p className="font-medium">2374389674</p>
+          <p className="font-medium">237438967423423543</p>
           {/* <p className="text-xs leading-3 text-gray-600 mt-2">
                     5 tasks pending
                   </p> */}
@@ -41,14 +42,11 @@ const ClientsTable = () => {
           {/* <p className="text-xs leading-3 text-gray-600 mt-2">$4,200 left</p> */}
         </td>
         <td className="pl-20">
-          <button className="font-medium bg-red-500 text-white px-6 py-3 rounded-md hover:ring-2 hover:ring-red-500 hover:text-red-500 hover:bg-transparent transition-colors duration-200 transform">
-            Block
+          <button className="font-medium bg-green-500 text-white px-6 py-3 rounded-md hover:ring-2 hover:ring-green-500 hover:text-green-500 hover:bg-transparent transition-colors duration-200 transform">
+            Unblock
           </button>
+          {/* <p className="text-xs leading-3 text-gray-600 mt-2">34 days</p> */}
         </td>
-        {/* <td className="pl-20">
-          <p className="font-medium">22.12.21</p>
-          <p className="text-xs leading-3 text-gray-600 mt-2">34 days</p>
-        </td> */}
         {/* <td className="pl-16">
                   <div className="flex items-center">
                     <img
@@ -69,7 +67,7 @@ const ClientsTable = () => {
                     />
                   </div>
                 </td> */}
-        <td className="px-7 2xl:px-0">
+        {/* <td className="px-7 2xl:px-0">
           {show == 0 ? (
             <button
               onClick={() => setShow(null)}
@@ -143,20 +141,23 @@ const ClientsTable = () => {
           )}
           {show == 0 && (
             <div className="dropdown-content bg-white shadow w-24 absolute z-30 right-0 mr-6 rounded-md">
-              <div className="text-xs font-medium w-full text-green-500 hover:bg-gradient-to-r hover:from-lime-500  hover:to-emerald-500 py-4 px-4 cursor-pointer hover:text-white flex items-center justify-around rounded-md">
+              <Link
+                to={"/role/editrole"}
+                className="text-xs font-medium w-full text-green-500 hover:bg-gradient-to-r hover:from-lime-500  hover:to-emerald-500 py-4 px-4 cursor-pointer hover:text-white flex items-center justify-around rounded-md"
+              >
                 <FaEdit></FaEdit>
                 <p>Edit</p>
-              </div>
+              </Link>
               <div className="text-xs font-medium w-full text-red-500 hover:bg-gradient-to-r hover:from-lime-500  hover:to-emerald-500 py-4 px-4 cursor-pointer hover:text-white flex items-center justify-around rounded-md">
                 <FaTrash></FaTrash>
                 <p>Delete</p>
               </div>
             </div>
           )}
-        </td>
+        </td> */}
       </tr>
     </>
   );
 };
 
-export default ClientsTable;
+export default BlockListTable;
